@@ -9,7 +9,7 @@ function Card({ logements }) {
         <Link to={`/fiche-logement/${logement.id}`} key={logement.id}>
           <article className="card" >
             <img src={logement.cover} alt={logement.title} />
-            <h2>{logement.title}</h2>
+            <h3>{logement.title}</h3>
           </article>
         </Link>
       ))}   
