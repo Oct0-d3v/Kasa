@@ -5,7 +5,7 @@ function Card({ logements }) {
 
   return (
     <div className="gallery">
-      {logements.map((logement) => (
+      {logements.slice(0, 6).map((logement) => (
         <Link to={`/fiche-logement/${logement.id}`} key={logement.id}>
           <article className="card" >
             <img src={logement.cover} alt={logement.title} />
